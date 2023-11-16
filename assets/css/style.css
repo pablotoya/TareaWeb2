@@ -3,26 +3,28 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* INICIO ENCABEZADO */
-#baner{
+
+#encabezado{
     display: flex;
     margin: 13px 0 ;
     align-items: center;
     
 }
- #baner #menu{
+ #encabezado #menu{
     display: flex;
     list-style: none;
 }
 #menu{
     width: 27%;
     list-style: none;
+    
 }
 #menu li a{
     text-decoration: none;
-    color: rgb(155, 153, 153);
+    color: rgb(10, 10, 10);
+    
 }
-#btnmenu{
+#buttonm{
     border-radius: 25px;
     padding: 13px 25px;
     background-color:rgb(0, 194, 194);
@@ -31,13 +33,13 @@
     font-weight:700;
 }
 #menu li a:hover{
-  color: rgb(65, 64, 64);
+  color: rgb(0, 194, 194);
 }
-#btnmenu:hover{
+#buttonm:hover{
     background-color: rgb(118, 247, 247);
 }
-/* INICIO CENTRO */
-#cabeza{
+
+#arriba{
     background-color:rgb(250, 250, 250);
     padding: 150px 0;
     background-image: url(/assets/images/image-mockups.png),url(/assets/images/bg-intro-desktop.svg);
@@ -47,22 +49,22 @@
     overflow: hidden;
     
 }
-#cabeza #texto h1{
+#arriba #texto h1{
     color: rgb(24, 53, 58);
    font-size: 55px;
    font-weight: 100;
    
    
 }
-#cabeza #texto p{
+#arriba #texto p{
     color: rgb(120, 120, 120);
     margin: 30px 0;
     line-height: 25px;
 }
-#cabeza #texto{
+#arriba #texto{
     margin-left: 150px;
 }
-#btncontent{
+#buttomc{
     border-radius: 25px;
     padding: 13px 25px;
     background-color:rgb(0, 194, 194);
@@ -70,7 +72,7 @@
     color: azure;
     font-weight:700;
 }
-#btncontent:hover{
+#buttomc:hover{
     background-color: rgb(118, 247, 247);
 }
 #content #centro{
@@ -80,24 +82,24 @@
     background-color:rgb(245, 245, 245);
     padding: 90px 150px ;
 }
-#superior h1{
+#textosupe h1{
     color: rgb(24, 53, 58);
     font-weight: 100;
 }
-#superior p{
+#textosupe p{
     color: rgb(120, 120, 120);
     margin: 30px 0;
     line-height: 25px;
 }
-#centro #cent{
+#centro #celdas{
     display: flex;
 }
-#cent #text h2{
+#celdas #text h2{
     color: rgb(24, 53, 58);
     font-weight: 100;
     margin: 30px 0;
 }
-#cent #text p{
+#celdas #text p{
     color: rgb(120, 120, 120);
     margin-right: 40px;
     line-height: 25px;
@@ -111,10 +113,10 @@
     font-weight: 100;
     margin-bottom: 55px;
 }
-#bajo #infe{
+#bajo #cards{
     display: flex;
 }
-#infe .card{
+#cards .card{
     margin-right: 30px;
     background-color: white;
     width: 50%;
@@ -124,7 +126,7 @@
     width: 100%;
     border-radius: 10px;
 }
-#tx #pr{
+#tx #pcard{
     margin: 20px ;
     color: rgb(120, 120, 120);
     font-size: 10px;
@@ -151,41 +153,50 @@
 #container footer{
     background-color: rgb(26, 26, 83);
 }
-/* INICIO FOOTER */
+
 footer{
     display: flex;
     
 }
-footer #izquierda{
+footer #footer1{
     margin: 40px 150px;
     color: #d0cccc;
 }
-#izquierda #logo{
+#footer1 #banner{
     margin-bottom: 50px;
 }
-footer #mitad1{
-    margin: 40px 62px;
+footer #footer2{
+    margin: 40px;
     list-style: none;
+   
+}
+#footer2 li a {
+    text-decoration: none;
+    line-height: 36px;
     
+    color: rgb(226, 225, 225);
 }
-#mitad1 li a {
-    text-decoration: none;
-    line-height: 35px;
-    color: rgb(172, 172, 172);
+#footer2 li a:hover{
+    color: rgb(15, 136, 136);
 }
-footer #mitad2{
-    margin: 40px 90px;
+footer #footer3{
+    margin: 40px;
     list-style: none;
 }
-#mitad2 li a {
+#footer3 li a {
     text-decoration: none;
     line-height: 35px;
-    color: rgb(172, 172, 172);
+    color: rgb(226, 225, 225);
 }
-footer #derecha{
+
+#footer3 li a:hover{
+    color: rgb(15, 136, 136);
+}
+
+footer #footer4{
     margin: 40px 50px 40px 350px;
 }
-#derecha button{
+#footer4 button{
     
     border-radius: 30px;
     padding: 10px 40px;
@@ -195,11 +206,11 @@ footer #derecha{
     font-size: 12px;
     margin-bottom: 30px;
 }
-#derecha button:hover{
+#footer4 button:hover{
     background-color: rgb(118, 247, 247);
 }
 
-#derecha p{
+#footer4 p{
     color: #d0cccc;
     font-size: 12px;
 }
@@ -208,7 +219,7 @@ footer #derecha{
     display: none;
 }
 
-/* @media (max-width:500px)
+@media (max-width:500px)
 {
     #hamburguer,#close{
         display: block;
@@ -220,7 +231,7 @@ footer #derecha{
         display: none;
         z-index: 20;
     }
-    #baner #menu{
+    #encabezado #menu{
         display: none;
         background-color: white;
         border-radius: 2%;
@@ -232,7 +243,7 @@ footer #derecha{
         padding: 40px 0;
         width: 90%;
     }
-    #baner #logo{
+    #encabezado #banner{
         margin-left: 7%;
     }
     #btnmenu{
@@ -242,18 +253,18 @@ footer #derecha{
         background: transparent;
         cursor: pointer;
     }
-    #centro #cent, #bajo #infe{
+    #centro #celdas, #bajo #cards{
         flex-direction: column;
     }
-    #content #cabeza,
+    #content #arriba,
     #content #centro,
     #content #bajo{
         width: 100%;
         padding:0;
         padding-top: 30px;
     }
-    #centro #cent,
-    #centro #superior{
+    #centro #celdas,
+    #centro #textosupe{
         width: 90%;
         padding-bottom: 30px;
     }
@@ -264,7 +275,7 @@ footer #derecha{
     #bajo h1{
         margin-left: 30px;
     }
-    #cabeza #texto{
+    #arriba #texto{
         margin: 0 auto;
         width: 90%;
         margin-bottom: 70px;
@@ -273,16 +284,16 @@ footer #derecha{
     #centro{
         background-image: url(/assets/images/image-mockups.png),none;
     }
-    footer #izquierda,
+    footer #footer1,
     footer #mitad,
-    footer #derecha{
+    footer #footer4{
         margin:12px auto;
         padding: 0 ;
     }
-    footer #izquierda{
+    footer #footer1{
         margin-top: 50px;
     }
-    footer #derecha{
+    footer #footer4{
         padding-bottom: 50px;
     }
     footer{
@@ -295,4 +306,4 @@ footer #derecha{
         padding: 0 auto;
         flex-direction: column;
     }
-} */
+}
