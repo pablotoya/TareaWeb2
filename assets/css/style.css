@@ -208,56 +208,91 @@ footer #derecha{
     display: none;
 }
 
-@media (max-width:480px){
-    #hamburger,#close{
+@media (max-width:500px)
+{
+    #hamburguer,#close{
         display: block;
         position: absolute;
-        top: 30px;
-        right: 10px;
+        top: 14px;
+        right: 10%;
     }
     #close{
-        display: block;
-        z-index: 10;
+        display: none;
+        z-index: 20;
     }
-   
-
+    #baner #menu{
+        display: none;
+        background-color: white;
+        border-radius: 2%;
+        line-height: 200%;
+        position: absolute;
+        top:14%;
+        right: 5%;
+        flex-direction: column;
+        padding: 40px 0;
+        width: 90%;
+    }
+    #baner #logo{
+        margin-left: 7%;
+    }
     #btnmenu{
         display: none;
-
+        outline: none;
+        border: none;
+        background: transparent;
+        cursor: pointer;
     }
-
-    #menu{
-        display: none;
-        background-color: #d0cccc;
-        position: absolute;
-        top: 0;
-        right: 0;
+    #centro #cent, #bajo #infe{
         flex-direction: column;
-        padding: 60px 0 ;
-        width: 60%;
     }
-
-    #menu li{
-        margin: 25px auto;
+    #content #cabeza,
+    #content #centro,
+    #content #bajo{
+        width: 100%;
+        padding:0;
+        padding-top: 30px;
     }
-
-    #content{
-       flex-direction: column; 
+    #centro #cent,
+    #centro #superior{
+        width: 90%;
+        padding-bottom: 30px;
     }
-
-    #cabeza #textos{
-        margin: 0 auto ;
+    #bajo .card{
+        margin: auto;
+        width: 90%;
+    }
+    #bajo h1{
+        margin-left: 30px;
+    }
+    #cabeza #texto{
+        margin: 0 auto;
         width: 90%;
         margin-bottom: 70px;
         margin-top: 800px;
-        box-sizing: border-box;
     }
-
-   
-
-    
-
-    
-   
-
+    #centro{
+        background-image: url(/assets/images/image-mockups.png),none;
+    }
+    footer #izquierda,
+    footer #mitad,
+    footer #derecha{
+        margin:12px auto;
+        padding: 0 ;
+    }
+    footer #izquierda{
+        margin-top: 50px;
+    }
+    footer #derecha{
+        padding-bottom: 50px;
+    }
+    footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #mitad {
+        margin: 0 auto;
+        padding: 0 auto;
+        flex-direction: column;
+    }
 }
