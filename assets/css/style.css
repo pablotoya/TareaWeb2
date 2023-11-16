@@ -208,7 +208,7 @@ footer #derecha{
     display: none;
 }
 
-@media (max-width:500px)
+/* @media (max-width:500px)
 {
     #hamburguer,#close{
         display: block;
@@ -295,4 +295,4 @@ footer #derecha{
         padding: 0 auto;
         flex-direction: column;
     }
-}
+} */
