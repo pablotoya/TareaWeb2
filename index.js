@@ -5,9 +5,11 @@ const menu = document.querySelector("#menu");
 hamburguer.addEventListener('click',()=>{
     menu.style.display = 'flex'
     closed.style.display = 'block'
+    // hamburger.style.display ='none'
 });
 
 closed.addEventListener('click',()=>{
     menu.style.display = 'none'
     closed.style.display = 'none'
+    // hamburger.style.display ='block'
 });

@@ -10,7 +10,7 @@
     align-items: center;
     
 }
- #encabezado #menu{
+#encabezado #menu{
     display: flex;
     list-style: none;
 }
@@ -42,7 +42,7 @@
 #arriba{
     background-color:rgb(250, 250, 250);
     padding: 150px 0;
-    background-image: url('/assets/images/image-mockups.png'),url(/assets/images/bg-intro-desktop.svg);
+    background-image: url(/assets/images/image-mockups.png),url(/assets/images/bg-intro-desktop.svg);
     background-repeat: no-repeat;
     background-position: 700px -150px,495px -250px;
     overflow: hidden;
@@ -214,38 +214,46 @@ footer #footer4{
     font-size: 12px;
 }
 
-#hamburger,#close{
+#hamburguer,#close{
     display: none;
 }
 
-@media (max-width:500px)
+@media (max-width:480px)
 {
     #hamburguer,#close{
         display: block;
         position: absolute;
         top: 14px;
         right: 10%;
+        
     }
     #close{
         display: none;
         z-index: 20;
     }
+
     #encabezado #menu{
         display: none;
-        background-color: white;
+        background-color: rgb(208, 208, 208);
         border-radius: 2%;
-        line-height: 200%;
         position: absolute;
-        top:14%;
-        right: 5%;
+        top:0;
+        right: 0;
+        padding: 60px 0;
         flex-direction: column;
-        padding: 40px 0;
-        width: 90%;
+        width: 60%;
     }
+    #menu li a{
+        margin: 30px auto;
+        line-height: 50px;
+        
+    }
+
     #encabezado #banner{
         margin-left: 7%;
     }
-    #btnmenu{
+
+    #buttonm{
         display: none;
         outline: none;
         border: none;
